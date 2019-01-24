@@ -36,7 +36,7 @@ lazy()是接受一个lambda表达式并返回一个`Lazy<T>`实例的函数，la
 
 **7、数据类**</br>
 Kotlin会为类的参数自动实现get和set方法，对于实体类的使用上会变得更加的方便。</br>
-`class User(val name: String, val age: Int, val gender: Int, var address: String)`
+`class User(val name: String, val age: Int, val gender: Int, var address: String)`</br>
 kotlin中有一个data关键字，用data关键字来声明一个数据类，除了会自动实现get和set方法外，还会自动生成equals、hashcode、toString</br>
 `data class User2(val name: String, val age: Int, val gender: Int, var address: String)`
 
