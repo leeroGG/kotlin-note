@@ -33,3 +33,13 @@ lazy()是接受一个lambda表达式并返回一个`Lazy<T>`实例的函数，la
 即第一次调用会执行lambda表达式并记录结果返回，输出HaHaHa和Hello；而第二次调用只会返回记录的结果数据，输出Hello。
 
 **PS：lateinit 只用于变量var，而lazy只用于常量val**
+
+**7、数据类**</br>
+Kotlin会为类的参数自动实现get和set方法，对于实体类的使用上会变得更加的方便。</br>
+`class User(val name: String, val age: Int, val gender: Int, var address: String)`
+kotlin中有一个data关键字，用data关键字来声明一个数据类，除了会自动实现get和set方法外，还会自动生成equals、hashcode、toString</br>
+`data class User2(val name: String, val age: Int, val gender: Int, var address: String)`
+
+**8、object和companion object**</br>
+object可以修饰类，表示该类的方法和变量都是静态的。</br>
+companion object为伴生对象，伴生对象在类中只能存在一个，伴生对象中所有的方法和变量都是静态的。
